@@ -3,27 +3,28 @@ linux
 
 ## 🐧 My Daily Linux Command Wheel
 
-I actively use Linux commands in my daily Cloud, DevOps, AWS, server administration, troubleshooting, deployment, and project workflows. In my free time, I continuously practice Linux commands and shell scripting to strengthen my hands-on Linux administration skills.
+I actively use Linux commands in my daily Cloud, DevOps, AWS, server administration, troubleshooting, deployment, and real-time project workflows. The commands below represent the core toolkit I use in production environments.
 
 <p align="center">
   <img src="./assets/linux-command-wheel.svg" alt="Daily Linux Command Wheel" width="100%" />
 </p>
 
-> 🐧 **Linux is part of my daily engineering workflow.** I regularly use Linux commands while working on Cloud infrastructure, AWS environments, DevOps automation, Git workflows, server administration, deployments, system monitoring, permission management, networking, and troubleshooting. Beyond project work, I dedicate free time to practicing Linux commands, Bash scripting, and real-world troubleshooting scenarios to continuously strengthen my hands-on skills.
+> 🐧 **Linux is the backbone of my engineering workflow.** From accessing EC2 instances and troubleshooting deployments with Tomcat and Jenkins, to inspecting system logs and managing Docker/Kubernetes containers—these are the real-world commands I rely on to keep production systems running smoothly.
 
-### Currently Practicing
+### 💻 Real-Time Project Workflow
 
 ```bash
-$ whoami
-cloud-devops-data-engineer
-
-$ echo $DAILY_FOCUS
-Linux | AWS | DevOps | Bash | Troubleshooting
-
-$ systemctl status learning
-● learning.service - Continuous Skill Development
-   Active: active (running)
-
-$ uptime
-Practicing consistently, building continuously 🚀
+$ ssh -i project-key.pem ec2-user@server
+$ cd /var/log
+$ tail -f app.log
+$ grep -i "error" app.log
+$ df -h
+$ free -h
+$ ps aux | grep java
+$ ss -tulpn
+$ sudo systemctl status tomcat
+$ sudo journalctl -u tomcat -n 100
+$ curl -I http://localhost:8080
+$ git pull origin main
+$ sudo systemctl restart tomcat
 ```
